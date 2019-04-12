@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args: Array<String>)
 {
     //println("hello, world!")
@@ -49,9 +51,109 @@ fun main(args: Array<String>)
     estaJalado(8.9)
     estaJalado(0.0)
 
+    holaMundo("Adrian")
+    holaMundoAvanzado(2.2)
+    val total = sumarDosNumeros(2,5)
+    println(total)
+
+
+    // ARREGLOS
+
+    val arregloCumpleanos:Array <Int> = arrayOf(1,2,3,4)
+
+    var arregloTodo:Array<Any> = arrayOf(1,"awrwer",true)
+
+    arregloCumpleanos[0]=5
+    arregloCumpleanos.set(0,5)
+
+     arregloTodo = arrayOf(5,2,3,4)
+
+   // val fecha = Date()
+   // fecha.time = 11231231
+   // fecha.year = 2000
+    //fecha = Date(1989,6,10)
+
+    val notas = arrayListOf(1,2,3,4,5,6)
+
+    // for each -> Itera el arreglo
+
+    notas.forEachIndexed { indice, nota ->
+        println("Indice: $indice")
+        println("Nota: $nota")
+
+    //return Unit
+
+    }
+    // impares +1 pares +2
+    val a = notas.map{nota ->
+       if(nota%2 == 0)  nota+2 else nota+1
+    }
+
+
+
+    println(a)
+
+    a.forEach {
+        paraImpar(it)
+       // println("Notas 2 : $it")
+    }
+
+
+    val respuestaFilter = notas.filter{
+
+        it  in 3..5
+        //it  > 2 && it <5
+    }
+        .map{
+            it * 2
+        }
+
+    println(respuestaFilter)
+
+ // map Mutar o cambiar el arreglo
+
+    // filter Filtrar el arreglo
+
+
+    val novias = arrayListOf(1,2,2,3,4,5)
+
+    val respuestaNovia: Boolean = novias.any{
+        it < 2
+    }
+
+    println(respuestaNovia)
+
+    val tazos =  arrayListOf(1,2,3,4,5,6,7)
+
+    val respuestaTazos = tazos.all{
+        it > 1
+    }
+
+
+    println(respuestaTazos)
+
+    val totalTazos = tazos.reduce { valorAcumulado, tazo ->
+        valorAcumulado + tazo
+    }
+
+    println(totalTazos)
+
 
 
 }
+
+fun paraImpar(nota:Int){
+    val modulo = nota%2
+    when(modulo){
+        0 -> {
+            nota+2
+        }
+        else->{
+            nota+1
+        }
+    }
+}
+
 
 fun estaJalado(nota: Double) :Double {
     when (nota){
@@ -70,3 +172,22 @@ fun estaJalado(nota: Double) :Double {
     }
     return nota
 }
+
+
+fun holaMundo(mensaje: String ):Unit{
+    println("Mensaje: $mensaje.")
+
+}
+
+fun holaMundoAvanzado(mensaje: Any ):Unit{
+    println("Mensaje: $mensaje.")
+
+}
+
+fun sumarDosNumeros(numUno: Int , numDos: Int):Int {
+    return numUno + numDos
+}
+
+
+
+
