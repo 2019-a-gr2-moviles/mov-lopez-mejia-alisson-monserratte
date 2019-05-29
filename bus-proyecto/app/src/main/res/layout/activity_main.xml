@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="@color/colorFondo">
+    <TextView
+            android:text="Olvido sus credenciales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="@color/colorLetrasRegistro" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="41dp" android:layout_marginTop="151dp" android:layout_marginStart="41dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/editText2"
+            android:layout_marginBottom="150dp"/>
+    <TextView
+            android:text="Registrate aqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" android:textStyle="bold"
+            android:textColor="@color/colorLetrasRegistro" android:layout_marginLeft="3dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="3dp"
+            app:layout_constraintStart_toEndOf="@+id/textView" android:layout_marginBottom="41dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:hint="Cedula" android:background="@color/colorInput" android:textColor="@color/colorLetraInput"
+            android:textColorHint="@color/colorLetraInput"
+            android:layout_marginTop="296dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" android:layout_marginEnd="31dp" android:layout_marginRight="31dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:textColor="@color/colorLetraInput" android:textColorHint="@color/colorLetraInput"
+            android:hint="Contrasena" android:background="@color/colorInput" android:layout_marginTop="67dp"
+            android:layout_marginBottom="80dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="31dp" app:layout_constraintBottom_toBottomOf="@+id/btn_login"
+            android:layout_marginStart="31dp" android:layout_marginEnd="31dp" android:layout_marginRight="31dp"/>
+    <TextView
+            android:text="No eres miembro aun? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:textColor="@color/colorLetraInput"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="44dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView2" android:layout_marginStart="44dp"/>
+    <Button
+            android:text="Ingresar"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:id="@+id/btn_login"
+            android:background="@color/colorBotonLogin" android:textColor="@color/colorLetrasLogin"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="240dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="31dp" android:layout_marginRight="31dp"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name='colorBotonLogin'>#E60808</color>
+    <color name="colorLetrasLogin">#F4FEFF</color>
+    <color name="colorLetrasRegistro">#881F2F</color>
+    <color name="colorFondo">#162033</color>
+    <color name="colorInput">#1F293A</color>
+    <color name="colorLetraInput">#7F848E</color>
+</resources>
