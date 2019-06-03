@@ -11,58 +11,66 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Numero Producto"
             android:ems="10"
-            tools:layout_editor_absoluteY="45dp" tools:layout_editor_absoluteX="42dp"
-            android:id="@+id/txt_numProducto"/>
+            android:id="@+id/txt_numProducto" android:hint="Numero Producto" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_descripcion" android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_descripcion"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Nombre producto"
             android:ems="10"
-            tools:layout_editor_absoluteY="107dp" tools:layout_editor_absoluteX="42dp" android:id="@+id/btn_nombre"/>
+            android:id="@+id/btn_nombre"
+            android:hint="Nombre producto" app:layout_constraintStart_toStartOf="@+id/txt_numProducto"
+            android:layout_marginTop="17dp" app:layout_constraintTop_toBottomOf="@+id/txt_numProducto"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Descripcion"
             android:ems="10"
-            tools:layout_editor_absoluteY="182dp" tools:layout_editor_absoluteX="42dp"
-            android:id="@+id/txt_descripcion"/>
+            android:id="@+id/txt_descripcion" android:hint="Descripcion"
+            app:layout_constraintStart_toStartOf="@+id/txt_precio" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_nombre" app:layout_constraintEnd_toEndOf="@+id/txt_precio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Precio"
             android:ems="10"
-            tools:layout_editor_absoluteY="262dp" tools:layout_editor_absoluteX="42dp" android:id="@+id/txt_precio"/>
+            android:id="@+id/txt_precio"
+            android:hint="Precio" app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento_Producto"
+            android:layout_marginTop="35dp" app:layout_constraintTop_toBottomOf="@+id/txt_descripcion"
+            app:layout_constraintEnd_toEndOf="@+id/txt_fechaLanzamiento_Producto"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Fecha lanzamiento"
             android:ems="10"
-            tools:layout_editor_absoluteY="342dp" tools:layout_editor_absoluteX="42dp"
-            android:id="@+id/txt_fechaLanzamiento_Producto"/>
+            android:id="@+id/txt_fechaLanzamiento_Producto" android:hint="Fecha lanzamiento"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="35dp"
+            android:layout_marginLeft="42dp" android:layout_marginStart="42dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_precio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Anios garantia"
             android:ems="10"
-            tools:layout_editor_absoluteY="408dp" tools:layout_editor_absoluteX="42dp"
-            android:id="@+id/txt_aniosGarantia"/>
+            android:id="@+id/txt_aniosGarantia" android:hint="Anios garantia"
+            app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento_Producto" android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_fechaLanzamiento_Producto"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Tienda ID"
             android:ems="10"
-            tools:layout_editor_absoluteY="492dp" tools:layout_editor_absoluteX="41dp" android:id="@+id/txt_tiendaID"/>
+            android:id="@+id/txt_tiendaID"
+            android:hint="Tienda ID" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="39dp"
+            android:layout_marginLeft="41dp" android:layout_marginStart="41dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_aniosGarantia"/>
     <Button
             android:text="GUARDAR"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="577dp"
-            tools:layout_editor_absoluteX="165dp" android:id="@+id/btn_guardar_hijos"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_guardar_hijos" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tiendaID" android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp" app:layout_constraintEnd_toEndOf="@+id/txt_tiendaID"/>
 </android.support.constraint.ConstraintLayout>

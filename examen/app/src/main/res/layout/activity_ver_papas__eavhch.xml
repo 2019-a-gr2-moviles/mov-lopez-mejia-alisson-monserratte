@@ -10,21 +10,74 @@
     <Button
             android:text="Eliminar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="451dp"
-            tools:layout_editor_absoluteX="64dp" android:id="@+id/btn_eliminar"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_eliminar"
+            app:layout_constraintStart_toStartOf="@+id/btn_Gestion_productos" android:layout_marginTop="63dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_matrizT"
+            app:layout_constraintEnd_toEndOf="@+id/btn_Gestion_productos"/>
     <Button
             android:text="Actualizar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="451dp"
-            tools:layout_editor_absoluteX="260dp" android:id="@+id/btn_actualizar"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_actualizar" android:layout_marginTop="63dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_matrizT" android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp" app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="Gestionar productos"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="589dp"
-            tools:layout_editor_absoluteX="16dp" android:id="@+id/btn_Gestion_productos"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Gestion_productos"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_crearProductos" android:layout_marginStart="16dp"/>
     <Button
             android:text="Crear productos"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="589dp"
-            tools:layout_editor_absoluteX="242dp" android:id="@+id/btn_crearProductos"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_crearProductos" android:layout_marginTop="90dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_actualizar" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="94dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_edit_nombreT"
+            android:hint="Nombre" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="47dp"
+            android:layout_marginLeft="39dp" android:layout_marginStart="39dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_edit_direccionT" android:hint="direccion"
+            app:layout_constraintStart_toStartOf="@+id/txt_edit_nombreT" android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_nombreT"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_edit_fechaAperturaT" android:hint="Fecha Apertura"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="34dp"
+            android:layout_marginLeft="39dp" android:layout_marginStart="39dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_direccionT"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_edit_RUCT"
+            android:hint="RUC" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="34dp"
+            android:layout_marginLeft="39dp" android:layout_marginStart="39dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_fechaAperturaT"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_edit_matrizT" android:hint="Matriz " app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="26dp" android:layout_marginLeft="39dp" android:layout_marginStart="39dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_edit_RUCT"/>
 </android.support.constraint.ConstraintLayout>

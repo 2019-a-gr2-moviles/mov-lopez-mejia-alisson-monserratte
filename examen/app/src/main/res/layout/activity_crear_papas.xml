@@ -10,42 +10,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Direccion tienda"
             android:ems="10"
             android:id="@+id/txt_tiendaDireccion" app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento"
             android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
             app:layout_constraintTop_toBottomOf="@+id/txt_tiendaNombre" android:layout_marginBottom="27dp"
-            app:layout_constraintBottom_toTopOf="@+id/txt_fechaLanzamiento"/>
+            app:layout_constraintBottom_toTopOf="@+id/txt_fechaLanzamiento" android:hint="Direccion tienda"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Nombre Tienda"
             android:ems="10"
             android:id="@+id/txt_tiendaNombre" android:layout_marginTop="43dp" android:layout_marginBottom="47dp"
             app:layout_constraintEnd_toEndOf="@+id/txt_tiendaDireccion"
             app:layout_constraintBottom_toTopOf="@+id/txt_tiendaDireccion" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/txt_tiendaDireccion"/>
+            app:layout_constraintStart_toStartOf="@+id/txt_tiendaDireccion" android:hint="Nombre Tienda"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Fecha Lanzamiento"
             android:ems="10"
             android:id="@+id/txt_fechaLanzamiento" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="58dp" android:layout_marginStart="58dp"
             app:layout_constraintTop_toBottomOf="@+id/txt_tiendaDireccion" android:layout_marginBottom="25dp"
-            app:layout_constraintBottom_toTopOf="@+id/txt_RUC"/>
+            app:layout_constraintBottom_toTopOf="@+id/txt_RUC" android:hint="Fecha Lanzamiento"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="RUC"
             android:ems="10"
             android:id="@+id/txt_RUC"
             app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento" android:layout_marginLeft="1dp"
             android:layout_marginStart="1dp" app:layout_constraintTop_toBottomOf="@+id/txt_fechaLanzamiento"
-            android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/switchSioNo"/>
+            android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/switchSioNo"
+            android:hint="RUC"/>
     <Button
             android:text="GUARDAR"
             android:layout_width="wrap_content"

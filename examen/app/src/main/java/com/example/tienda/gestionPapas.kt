@@ -10,14 +10,17 @@ class gestionPapas : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_gestion_papas)
+
+
         var nombreUsuarioTraje = " "
 
         nombreUsuarioTraje = intent.getStringExtra("usuario").toString()
 
         Log.e("nombreUsuaioTraje",nombreUsuarioTraje)
 
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gestion_papas)
+
 
         btn_crear_tienda.setOnClickListener {
             irActivadadCrearPapas(nombreUsuarioTraje)
@@ -39,7 +42,7 @@ class gestionPapas : AppCompatActivity() {
 
         val intent = Intent(this,listar_papas::class.java)
 
-        //intent.putExtra("usuario",nombreUsuarioTraje)
+        intent.putExtra("usuario",nombreUsuarioTraje)
 
         startActivity(intent)
     }

@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
             var noEsVacio = guardarUsuario(nombreUsuario)
             if(noEsVacio){
                 irActividad(nombreUsuario)
+                Toast.makeText(this,nombreUsuario +" ingreso " ,Toast.LENGTH_LONG).show()
 
             }else{
                 Toast.makeText(this,"El campo name debe contener su nombre " ,Toast.LENGTH_LONG).show()
-
             }
 
 

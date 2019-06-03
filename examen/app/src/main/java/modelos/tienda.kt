@@ -8,14 +8,14 @@ class tienda(
     var nombre:String,
     var direccion :String,
     var fechaApertura: String,
-    var RUC : Int,
+    var RUC : String,
     var matriz:String
 ):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readInt(),
+        parcel.readString(),
         parcel.readString()
     ) {
     }
@@ -24,7 +24,7 @@ class tienda(
         parcel.writeString(nombre)
         parcel.writeString(direccion)
         parcel.writeString(fechaApertura)
-        parcel.writeInt(RUC)
+        parcel.writeString(RUC)
         parcel.writeString(matriz)
     }
 

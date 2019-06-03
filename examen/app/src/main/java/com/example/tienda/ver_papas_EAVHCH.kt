@@ -9,11 +9,17 @@ class ver_papas_EAVHCH : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        var tiendaPosicion = intent.getParcelableExtra<tienda>("tiendaEnviar")
-
-        Log.e("tienda EAVHCH","" +tiendaPosicion  )
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ver_papas__eavhch)
+
+
+        var tiendaPosicion = intent.getParcelableExtra<tienda>("tiendaEnviar") as tienda
+
+
+        Log.e("tienda EAVHCH","" +tiendaPosicion.nombre )
+
+
     }
 }
+
+
