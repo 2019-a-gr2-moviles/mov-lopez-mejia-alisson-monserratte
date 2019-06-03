@@ -12,49 +12,54 @@
             android:inputType="textPersonName"
             android:text="Direccion tienda"
             android:ems="10"
-            tools:layout_editor_absoluteY="135dp" tools:layout_editor_absoluteX="59dp"
-            android:id="@+id/txt_tiendaDireccion"/>
+            android:id="@+id/txt_tiendaDireccion" app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento"
+            android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tiendaNombre" android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_fechaLanzamiento"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="Nombre Tienda"
             android:ems="10"
-            tools:layout_editor_absoluteY="43dp" tools:layout_editor_absoluteX="59dp"
-            android:id="@+id/txt_tiendaNombre"/>
+            android:id="@+id/txt_tiendaNombre" android:layout_marginTop="43dp" android:layout_marginBottom="47dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_tiendaDireccion"
+            app:layout_constraintBottom_toTopOf="@+id/txt_tiendaDireccion" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_tiendaDireccion"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="Fecha Lanzamiento"
             android:ems="10"
-            tools:layout_editor_absoluteY="207dp" tools:layout_editor_absoluteX="58dp"
-            android:id="@+id/txt_fechaLanzamiento"/>
+            android:id="@+id/txt_fechaLanzamiento" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="58dp" android:layout_marginStart="58dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tiendaDireccion" android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_RUC"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="RUC"
             android:ems="10"
-            tools:layout_editor_absoluteY="277dp" tools:layout_editor_absoluteX="49dp" android:id="@+id/txt_RUC"/>
-    <RadioButton
-            android:text="Si"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="372dp"
-            tools:layout_editor_absoluteX="49dp" android:id="@+id/radioBtn_si"/>
-    <TextView
-            android:text="Es matriz ?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="334dp"
-            tools:layout_editor_absoluteX="49dp" android:id="@+id/txtViewEsmatriz"/>
-    <RadioButton
-            android:text="No"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="372dp"
-            tools:layout_editor_absoluteX="152dp" android:id="@+id/radioBtnNo"/>
+            android:id="@+id/txt_RUC"
+            app:layout_constraintStart_toStartOf="@+id/txt_fechaLanzamiento" android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp" app:layout_constraintTop_toBottomOf="@+id/txt_fechaLanzamiento"
+            android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/switchSioNo"/>
     <Button
             android:text="GUARDAR"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="432dp"
-            tools:layout_editor_absoluteX="152dp" android:id="@+id/btn_guardar"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_guardar"
+            app:layout_constraintTop_toBottomOf="@+id/switchSioNo" android:layout_marginBottom="251dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Switch
+            android:text="Es matriz ? "
+            android:layout_width="146dp"
+            android:layout_height="0dp"
+            android:id="@+id/switchSioNo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_RUC" android:layout_marginBottom="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_guardar" app:layout_constraintBottom_toTopOf="@+id/btn_guardar"
+            android:layout_marginEnd="36dp" android:layout_marginRight="36dp"/>
 </android.support.constraint.ConstraintLayout>
