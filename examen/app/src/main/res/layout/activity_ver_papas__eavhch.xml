@@ -7,4 +7,24 @@
         android:layout_height="match_parent"
         tools:context=".ver_papas_EAVHCH">
 
+    <Button
+            android:text="Eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="451dp"
+            tools:layout_editor_absoluteX="64dp" android:id="@+id/btn_eliminar"/>
+    <Button
+            android:text="Actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="451dp"
+            tools:layout_editor_absoluteX="260dp" android:id="@+id/btn_actualizar"/>
+    <Button
+            android:text="Gestionar productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="589dp"
+            tools:layout_editor_absoluteX="16dp" android:id="@+id/btn_Gestion_productos"/>
+    <Button
+            android:text="Crear productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="589dp"
+            tools:layout_editor_absoluteX="242dp" android:id="@+id/btn_crearProductos"/>
 </android.support.constraint.ConstraintLayout>

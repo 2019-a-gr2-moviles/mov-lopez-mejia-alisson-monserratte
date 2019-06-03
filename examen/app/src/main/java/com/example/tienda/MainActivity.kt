@@ -1,8 +1,10 @@
 package com.example.tienda
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_crear_papas.*
 import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
@@ -10,15 +12,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        guardarNombreInicio("ali")
+
+
+        btn_guardar.setOnClickListener{
+            irActividad()
+        }
     }
 
 
-    fun guardarNombreInicio(val nombre: String){
-       val  fileName = "ali"
-        val fos: FileOutputStream = openFileOutput(fileName,Context.MODE_PRIVATE)
 
-        fos.writer(nombre)
-        fos.close()
+
+
+    fun irActividad() {
+        val intent = Intent(
+            this, gestionPapas::class.java
+        )
+       startActivity(intent)
     }
+
 }
+

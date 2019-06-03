@@ -9,6 +9,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".editar_Productos_hijo">
+        </activity>
+        <activity android:name=".CrearHijosPRodutcos">
+        </activity>
+        <activity android:name=".listar_productos">
+        </activity>
         <activity android:name=".ver_papas_EAVHCH">
         </activity>
         <activity android:name=".crearPapas">

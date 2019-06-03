@@ -7,4 +7,8 @@
         android:layout_height="match_parent"
         tools:context=".listar_productos">
 
+    <ListView
+            android:layout_width="395dp"
+            android:layout_height="715dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp"
+            android:id="@+id/listView_Hijos"/>
 </android.support.constraint.ConstraintLayout>
